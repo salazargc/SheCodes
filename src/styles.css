@@ -45,3 +45,16 @@ li {
   color: rgb(255, 145, 0);
   text-align: right;
 }
+.app {
+  font-size: 15px;
+  color: gray;
+  margin-left: 440px;
+}
+a {
+  margin: 440px auto;
+}
+.coder {
+  font-size: 15px;
+  color: gray;
+  margin-left: 1px;
+}
