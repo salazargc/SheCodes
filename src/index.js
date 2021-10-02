@@ -1,5 +1,6 @@
 //Feature # 1
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let hour = date.getHours();
   if (hour < 10) {
     hour = `0${hour}`;
@@ -21,9 +22,6 @@ function formatDate(date) {
   let day = days[weekDays];
   return `${day} ${hour}:${minutes}`;
 }
-let currentDay = document.querySelector("#current-date");
-let currentTime = new Date();
-currentDay.innerHTML = formatDate(currentTime);
 
 // Show City and weather conditions
 
@@ -51,6 +49,9 @@ function showTemperature(response) {
     response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#current-date").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
 }
 
 // Current location button

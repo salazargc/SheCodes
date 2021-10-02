@@ -21,6 +21,9 @@ li {
   list-style: none;
   display: block;
 }
+li::first-letter {
+  text-transform: capitalize;
+}
 .card {
   margin: 20px auto;
   border: 1px solid lightgray;
