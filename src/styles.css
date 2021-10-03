@@ -24,22 +24,13 @@ li {
 li::first-letter {
   text-transform: capitalize;
 }
+
 .card {
   margin: 20px auto;
   border: 1px solid lightgray;
   padding: 15px;
   border-radius: 20px;
   max-width: 600px;
-}
-.temp {
-  font-size: 60px;
-  margin: 5px 26px auto;
-}
-.celsius {
-  font-size: 25px;
-  position: absolute;
-  left: 105px;
-  bottom: 55px;
 }
 
 .cloudy-icon {
@@ -53,9 +44,27 @@ li::first-letter {
   color: gray;
 }
 
-.link {
-  display: block;
-  text-align: center;
-  font-size: 15px;
-  margin-top: 10px;
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 5px 26px auto;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+  right: 22px;
+}
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .fahrenheit {
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
