@@ -20,7 +20,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[weekDays];
-  return `${day} ${hour}:${minutes}`;
+  return `Last updated: ${day} ${hour}:${minutes}`;
 }
 
 // Show City and weather conditions
@@ -52,7 +52,12 @@ function showTemperature(response) {
   document.querySelector("#current-date").innerHTML = formatDate(
     response.data.dt * 1000
   );
-
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
   celsiusTemperature = Math.round(response.data.main.temp);
 }
 

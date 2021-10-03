@@ -1,36 +1,44 @@
 body {
-  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.weather-form {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 h1 {
   font-size: 40px;
-  margin: 5px 26px auto;
+  font-weight: 24px;
+  line-height: 28px;
+  margin: 3px 6px;
 }
 ul {
-  margin: 0 0 10px;
+  margin: 5px;
   padding: 0;
-  display: block;
 }
 
 li {
   color: rgb(136, 133, 133);
   list-style: none;
-  display: block;
+  margin: 0 6px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 100;
 }
 li::first-letter {
   text-transform: capitalize;
 }
-
+small a {
+  text-decoration: none;
+}
+.card-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 .card {
-  margin: 20px auto;
   border: 1px solid lightgray;
   padding: 15px;
   border-radius: 20px;
-  max-width: 600px;
+}
+.weather-form {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cloudy-icon {
@@ -38,10 +46,6 @@ li::first-letter {
   font-size: 100px;
   color: rgb(255, 145, 0);
   text-align: right;
-}
-.app,
-.coder {
-  color: gray;
 }
 
 .weather-temperature strong {
