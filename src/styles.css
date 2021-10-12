@@ -65,10 +65,14 @@ small {
 }
 
 .weather-temperature .units {
+  color: #212121;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
   position: relative;
-  font-size: 16px;
+  line-height: 1;
   top: -34px;
-  right: 22px;
+  right: 30px;
 }
 .weather-temperature .active {
   color: rgb(33, 33, 33);
