@@ -154,3 +154,5 @@ function currentButton(event) {
   console.log(event);
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+
+inputCity("Calgary");
