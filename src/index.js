@@ -135,24 +135,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let celsiusTemperature = null;
 
-// Current location button
-
-let showLocation = document.querySelector("#location-button");
-showLocation.addEventListener("click", currentButton);
-
-function showPosition(position) {
-  let apiKey = "610aded4732d92a616becc2092c41d04";
-  let units = "metric";
-  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
-  let apiUrl = `${apiEndpoint}?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
-
-  axios.get(apiUrl).then(showTemperature);
-}
-
-function currentButton(event) {
-  event.preventDefault();
-  console.log(event);
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-
 inputCity("Calgary");

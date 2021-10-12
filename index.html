@@ -24,7 +24,7 @@
           <form class="weather-form" id="search-form">
             <div class="card-body" id="card-body">
               <div class="row">
-                <div class="col-6">
+                <div class="col-9">
                   <input
                     type="search"
                     placeholder="Enter a city"
@@ -38,17 +38,8 @@
                   <input
                     type="submit"
                     value="Search"
-                    class="form-control btn btn-primary"
+                    class="form-control btn btn-primary w-100"
                   />
-                </div>
-                <div class="col-3">
-                  <button
-                    type="button"
-                    class="btn btn-success"
-                    id="location-button"
-                  >
-                    Current
-                  </button>
                 </div>
               </div>
             </div>
@@ -59,7 +50,7 @@
           <div class="row">
             <div class="col-sm-6">
               <ul>
-                <li id="current-date">Last updated: Monday 9:00</li>
+                <li id="current-date">Monday 9:00</li>
                 <li id="description">Cloudy</li>
               </ul>
             </div>
@@ -92,12 +83,12 @@
                 <ul>
                   <li>
                     Humidity:
-                    <span id="humidity">15</span>
+                    <span class="hum" id="humidity">15</span>
                     <span>%</span>
                   </li>
                   <li>
                     Wind:
-                    <span id="wind"> 2 </span>
+                    <span class="win" id="wind"> 2 </span>
                     <span>km/hr</span>
                   </li>
                 </ul>
@@ -107,10 +98,10 @@
           </div>
         </div>
         <small>
-          <a href="https://github.com/salazargc/SheCodes" target="blank"
-            >Open-Source code</a
+          Weather App code by Gabriela Salazar and is
+          <a href="https://github.com/salazargc/SheCodes" target="blank">
+            open-source on GitHub</a
           >
-          by Gabriela Salazar
         </small>
       </div>
     </div>
